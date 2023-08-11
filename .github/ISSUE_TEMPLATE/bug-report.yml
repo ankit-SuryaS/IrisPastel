@@ -1,7 +1,7 @@
 name: 🐞 Bug Report
 description: File a bug report
 title: '[Bug]: '
-labels: ['Type: Bug 🐛', 'Needs: Triage 🔍']
+labels: ['Bug']
 assignees: []
 body:
   - type: textarea

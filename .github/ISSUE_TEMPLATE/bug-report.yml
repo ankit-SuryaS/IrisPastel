@@ -4,21 +4,56 @@ title: '[Bug]: '
 labels: ['Bug']
 assignees: []
 body:
-  - type: markdown
-    attributes:
-      value: |
-        Thanks for taking the time to fill out this bug report!
-
   - type: dropdown
-    id: lib-version
+    id: affected-component
     attributes:
-      label: Library
-      description: Which library is affected
+      label: Affected component
+      description: Which component is affected
       options:
-        - React Northstar / v0 (@fluentui/react-northstar)
-        - React / v8 (@fluentui/react)
-        - React Components / v9 (@fluentui/react-components)
-        - Web Components (@fluentui/web-components)
+        - AbAccordion
+        - AbAppLogo
+        - AbBadge
+        - AbBreadcrumbs
+        - AbButton
+        - AbCard
+        - AbCheckbox
+        - AbDateInput
+        - AbDialog
+        - AbObjectDiff
+        - AbDivider
+        - AbDrawer
+        - AbField
+        - AbFieldset
+        - AbFileInput
+        - AbFlex
+        - AbForm
+        - AbGrid
+        - AbInput
+        - AbInputController
+        - AbLabel
+        - AbMenu
+        - AbNav
+        - AbNotification
+        - AbPersona
+        - AbPopover
+        - AbProgressBar
+        - AbRadio
+        - AbResult
+        - AbScrollablePane
+        - AbSearchbox
+        - AbSelect
+        - AbSkeleton
+        - AbSlider
+        - AbSpinner
+        - AbStepper
+        - AbSwitch
+        - AbTable
+        - AbTabs
+        - AbText
+        - AbTextarea
+        - AbToolbar
+        - AbTooltip
+        
     validations:
       required: true
 
@@ -76,7 +111,7 @@ body:
       label: Bug Description
       value: |
         ## Actual Behavior
-        fill this out
+        `fill this out`
 
         ## Expected Behavior
         fill this out

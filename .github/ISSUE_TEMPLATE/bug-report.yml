@@ -10,7 +10,6 @@ body:
       label: Affected component
       description: Which component is affected
       options:
-        - None
         - AbAccordion
         - AbAppLogo
         - AbBadge
@@ -56,7 +55,7 @@ body:
         - AbTooltip
         
     validations:
-      required: true
+      required: false
 
   - type: textarea
     id: env-info

@@ -9,3 +9,11 @@ body:
     attributes:
       label: Bug description
       description: A brief description to explain the bug
+  - type: select
+    id: package-version
+    attributes: 
+      label: Package version
+      description: The package version used when encountered the bug.
+      options: 
+        - v6.0.0
+        - v6.1.0

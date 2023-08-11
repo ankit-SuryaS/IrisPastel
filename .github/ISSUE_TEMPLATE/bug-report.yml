@@ -4,6 +4,21 @@ title: '[Bug]: '
 labels: ['Bug']
 assignees: []
 body:
+  - type: textarea
+    id: bug-description
+    attributes:
+      label: Bug description
+      description: A brief description to explain the bug
+      
+ - type: select
+    id: package-version
+    attributes: 
+      label: Package version
+      description: The package version used when encountered the bug.
+      options: 
+        - v6.0.0
+        - v6.1.0
+        
   - type: dropdown
     id: affected-component
     attributes:
@@ -53,88 +68,27 @@ body:
         - AbTextarea
         - AbToolbar
         - AbTooltip
-        
-    validations:
-      required: false
 
   - type: textarea
-    id: env-info
+    id: expected-behaviour
     attributes:
-      label: System Info
-      description: Output of `npx envinfo --system --npmPackages '{@fluent/*}' --browsers`
-      render: shell
-    validations:
+      label: Expected behaviour
+    validation:
       required: true
 
-  - type: input
-    id: reproduction
-    attributes:
-      label: Reproduction
-      description: |
-        Please provide a link to one of following browser tools based on library version:
-        - React Northstar / v0 - https://codesandbox.io/s/fluent-ui-template-8ismt
-        - React / v8  - https://aka.ms/fluentpen
-        - React Components / v9 - https://codesandbox.io/
-        - Web Components - https://codesandbox.io/
-
-        Or a link to a repo that can reproduce the problem you ran into.
-
-        **NOTE:**
-
-        A [minimal reproduction](https://stackoverflow.com/help/minimal-reproducible-example) is required.
-        If a report is vague (e.g. just a generic error message) and has no reproduction, it will receive a "need reproduction" label.
-
-        If no reproduction is provided after 3 days, it will be auto-closed.
+  - type: textarea
+    id: steps-to-reproduce
+    attributes: 
+      label: Steps to reproduce
+      description: Steps to take in order to reproduce the bug
     validations:
       required: true
 
   - type: textarea
-    id: description
+    id: logs-screenshots
     attributes:
-      label: Bug Description
-      value: |
-        ## Actual Behavior
-        `fill this out`
-
-        ## Expected Behavior
-        fill this out
-    validations:
-      required: true
-
-  - type: textarea
-    id: logs
-    attributes:
-      label: Logs
-      description: Please copy and paste any relevant log output. This will be automatically formatted into code, so no need for backticks.
-      render: shell
-
-  - type: dropdown
-    id: request-priority
-    attributes:
-      label: Requested priority
-      options:
-        - Blocking
-        - High
-        - Normal
-        - Low
-    validations:
-      required: true
-
-  - type: input
-    id: products-affected
-    attributes:
-      label: Products/sites affected
-      placeholder: (provide if applicable)
-
-  - type: dropdown
-    id: requested-help
-    attributes:
-      label: Are you willing to submit a PR to fix?
-      options:
-        - 'yes'
-        - 'no'
-    validations:
-      required: true
+      label: Logs & screenshots
+      description: Copy paste any relavant logs and screenshots
 
   - type: checkboxes
     id: checkboxes
@@ -142,7 +96,7 @@ body:
       label: Validations
       description: Before submitting the issue, please make sure you do the following
       options:
-        - label: Check that there isn't already an issue that reports the same bug to avoid creating a duplicate.
+        - label: I have checked that there isn't already an issue that reports the same bug to avoid creating a duplicate.
           required: true
-        - label: The provided reproduction is a minimal reproducible example of the bug.
+        - label: I have attached relavant logs and/or screenshots.
           required: true

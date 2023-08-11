@@ -9,6 +9,7 @@ body:
     attributes:
       label: Bug description
       description: A brief description to explain the bug
+
   - type: select
     id: package-version
     attributes: 

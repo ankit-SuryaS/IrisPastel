@@ -5,9 +5,9 @@ labels: ['Type: Bug 🐛', 'Needs: Triage 🔍']
 assignees: []
 body:
   - type: textarea
-    id: bug-description
+    id: description
     attributes:
-      label: Bug description
+      label: Description
       description: A brief description to explain the bug.
 
   - type: dropdown
@@ -76,6 +76,7 @@ body:
     id: expected-behaviour
     attributes:
       label: Expected behaviour
+      placeholder: Write about what was expected, 
     validations:
       required: true
 

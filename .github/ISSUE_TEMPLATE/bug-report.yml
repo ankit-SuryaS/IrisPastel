@@ -8,7 +8,7 @@ body:
     id: description
     attributes:
       label: Description
-      description: A brief description to explain the bug.
+      placeholder: A brief description to explain the bug.
 
   - type: dropdown
     id: package-version
@@ -76,7 +76,7 @@ body:
     id: expected-behaviour
     attributes:
       label: Expected behaviour
-      placeholder: Write about what was expected, 
+      placeholder: Write about what was expected.
     validations:
       required: true
 
@@ -84,6 +84,7 @@ body:
     id: actual-behaviour
     attributes:
       label: Actual behaviour
+      placeholder: Write about what didn't work.
     validations:
       required: true
 
@@ -91,7 +92,7 @@ body:
     id: steps-to-reproduce
     attributes: 
       label: Steps to reproduce
-      description: Steps to take in order to reproduce the bug.
+      placeholder: Steps to take in order to reproduce the bug.
     validations:
       required: true
 
@@ -99,7 +100,7 @@ body:
     id: logs-screenshots
     attributes:
       label: Logs & screenshots
-      description: Copy paste any relavant logs and screenshots.
+      placeholder: Copy paste any relavant logs and screenshots.
 
   - type: checkboxes
     id: checkboxes

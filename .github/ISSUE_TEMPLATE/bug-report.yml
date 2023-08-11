@@ -9,7 +9,7 @@ body:
     attributes:
       label: Bug description
       description: A brief description to explain the bug
-      
+
  - type: select
     id: package-version
     attributes: 
@@ -18,7 +18,7 @@ body:
       options: 
         - v6.0.0
         - v6.1.0
-        
+
   - type: dropdown
     id: affected-component
     attributes:

@@ -10,7 +10,7 @@ body:
       label: Bug description
       description: A brief description to explain the bug
 
-  - type: select
+  - type: dropdown
     id: package-version
     attributes: 
       label: Package version

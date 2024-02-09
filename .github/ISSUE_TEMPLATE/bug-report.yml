@@ -1,7 +1,7 @@
 name: 🐞 Bug Report
 description: File a bug report
 title: '[Bug]: '
-labels: ['Bug']
+labels: ['🐞Bug']
 assignees: []
 body:
   - type: textarea
@@ -25,6 +25,7 @@ body:
   - type: dropdown
     id: affected-component
     attributes:
+      multiple: true
       label: Affected component
       description: Which component is affected by this bug.
       options:

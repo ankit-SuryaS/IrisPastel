@@ -1,7 +1,7 @@
-name: "\U0001F680 New feature proposal"
-description: Propose a new feature to be added to Fluent UI
-title: '[Feature]: '
-labels: ['Type: Feature', 'Needs: Triage 🔍']
+name: "✨ New feature"
+description: Describe a new feature.
+title: '[feat✨]: '
+labels: []
 assignees: []
 body:
   - type: markdown

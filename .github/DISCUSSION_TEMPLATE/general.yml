@@ -1,10 +1,6 @@
 title: "[Feat✨] "
 labels: []
 body:
-  # - type: markdown
-  #   attributes:
-  #     value: |
-  #       This is text that will show up in the template!
   - type: textarea
     id: description
     attributes:
@@ -12,18 +8,11 @@ body:
       description: "Include the expected behaviour of the feature."
     validations:
       required: true
-  - type: markdown
+  - type: textarea
+    id: references
     attributes:
-      value: |
-        ## Markdown header
-        And some more markdown
-  - type: input
-    id: has-id
-    attributes:
-      label: Suggestions
-      description: A description about suggestions to help you
-    validations:
-      required: true
+      label: References
+      description: "Include the implementation/design references to escalate development process."
   - type: dropdown
     id: priority
     attributes:
@@ -34,7 +23,7 @@ body:
         - Low
   - type: checkboxes
     attributes:
-      label: Validations
+      label: Validation
       description: Before submitting the request, please make sure you do the following.
       options:
         - label: I have checked that there isn't already a request for the same feature to avoid creating a duplicate.

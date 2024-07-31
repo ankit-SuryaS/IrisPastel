@@ -1,21 +1,15 @@
-title: "[General] "
-labels: ["General Introduction"]
+title: "[Feat✨] "
+labels: []
 body:
-  - type: markdown
-    attributes:
-      value: |
-        This is text that will show up in the template!
+  # - type: markdown
+  #   attributes:
+  #     value: |
+  #       This is text that will show up in the template!
   - type: textarea
-    id: improvements
+    id: description
     attributes:
-      label: Top 3 improvements
-      description: "What are the top 3 improvements we could make to this project?"
-      value: |
-        1.
-        2.
-        3.
-        ...
-      render: bash
+      label: Describe the feature that you would like added
+      description: "Include the expected behaviour of the feature."
     validations:
       required: true
   - type: markdown
@@ -31,25 +25,17 @@ body:
     validations:
       required: true
   - type: dropdown
-    id: download
+    id: priority
     attributes:
-      label: Which area of this project could be most improved?
+      label: Request priority
       options:
-        - Documentation
-        - Pull request review time
-        - Bug fix time
-        - Release cadence
-    validations:
-      required: true
+        - High
+        - Normal
+        - Low
   - type: checkboxes
     attributes:
-      label: Check that box!
+      label: Validations
+      description: Before submitting the request, please make sure you do the following.
       options:
-        - label: This one!
+        - label: I have checked that there isn't already a request for the same feature to avoid creating a duplicate.
           required: true
-        - label: I won't stop you if you check this one, too
-  - type: markdown
-    attributes:
-      value: |
-        ### The thrilling conclusion
-        _to our template_

@@ -1,5 +1,5 @@
-title: "[Feat✨] "
-labels: []
+title: "[Feat✨]: "
+labels: ["📝Task"]
 body:
   - type: textarea
     id: description
